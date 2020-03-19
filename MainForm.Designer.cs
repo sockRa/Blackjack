@@ -43,6 +43,10 @@
 			this.Player2ScoreLabel = new System.Windows.Forms.Label();
 			this.Player1Label = new System.Windows.Forms.Label();
 			this.Player2Label = new System.Windows.Forms.Label();
+			this.Player1CardPanel = new System.Windows.Forms.FlowLayoutPanel();
+			this.Player2CardPanel = new System.Windows.Forms.FlowLayoutPanel();
+			this.Player1ScoreText = new System.Windows.Forms.Label();
+			this.Player2ScoreText = new System.Windows.Forms.Label();
 			this.MainTableLayout.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.Player1SplitContainer)).BeginInit();
 			this.Player1SplitContainer.Panel1.SuspendLayout();
@@ -76,13 +80,13 @@
 			this.MainTableLayout.RowCount = 2;
 			this.MainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.MainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.MainTableLayout.Size = new System.Drawing.Size(876, 265);
+			this.MainTableLayout.Size = new System.Drawing.Size(707, 375);
 			this.MainTableLayout.TabIndex = 0;
 			// 
 			// Player1SplitContainer
 			// 
 			this.Player1SplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Player1SplitContainer.Location = new System.Drawing.Point(779, 3);
+			this.Player1SplitContainer.Location = new System.Drawing.Point(610, 3);
 			this.Player1SplitContainer.Name = "Player1SplitContainer";
 			this.Player1SplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -93,8 +97,8 @@
 			// Player1SplitContainer.Panel2
 			// 
 			this.Player1SplitContainer.Panel2.Controls.Add(this.Player1StayButton);
-			this.Player1SplitContainer.Size = new System.Drawing.Size(94, 126);
-			this.Player1SplitContainer.SplitterDistance = 59;
+			this.Player1SplitContainer.Size = new System.Drawing.Size(94, 181);
+			this.Player1SplitContainer.SplitterDistance = 84;
 			this.Player1SplitContainer.TabIndex = 0;
 			// 
 			// Player1HitButton
@@ -102,7 +106,7 @@
 			this.Player1HitButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Player1HitButton.Location = new System.Drawing.Point(0, 0);
 			this.Player1HitButton.Name = "Player1HitButton";
-			this.Player1HitButton.Size = new System.Drawing.Size(94, 59);
+			this.Player1HitButton.Size = new System.Drawing.Size(94, 84);
 			this.Player1HitButton.TabIndex = 0;
 			this.Player1HitButton.Text = "Hit";
 			this.Player1HitButton.UseVisualStyleBackColor = true;
@@ -112,7 +116,7 @@
 			this.Player1StayButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Player1StayButton.Location = new System.Drawing.Point(0, 0);
 			this.Player1StayButton.Name = "Player1StayButton";
-			this.Player1StayButton.Size = new System.Drawing.Size(94, 63);
+			this.Player1StayButton.Size = new System.Drawing.Size(94, 93);
 			this.Player1StayButton.TabIndex = 0;
 			this.Player1StayButton.Text = "Stay";
 			this.Player1StayButton.UseVisualStyleBackColor = true;
@@ -120,7 +124,7 @@
 			// Player2SplitContainer
 			// 
 			this.Player2SplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Player2SplitContainer.Location = new System.Drawing.Point(779, 135);
+			this.Player2SplitContainer.Location = new System.Drawing.Point(610, 190);
 			this.Player2SplitContainer.Name = "Player2SplitContainer";
 			this.Player2SplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -131,8 +135,8 @@
 			// Player2SplitContainer.Panel2
 			// 
 			this.Player2SplitContainer.Panel2.Controls.Add(this.Player2StayButton);
-			this.Player2SplitContainer.Size = new System.Drawing.Size(94, 127);
-			this.Player2SplitContainer.SplitterDistance = 59;
+			this.Player2SplitContainer.Size = new System.Drawing.Size(94, 182);
+			this.Player2SplitContainer.SplitterDistance = 84;
 			this.Player2SplitContainer.TabIndex = 1;
 			// 
 			// Player2HitButton
@@ -140,7 +144,7 @@
 			this.Player2HitButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Player2HitButton.Location = new System.Drawing.Point(0, 0);
 			this.Player2HitButton.Name = "Player2HitButton";
-			this.Player2HitButton.Size = new System.Drawing.Size(94, 59);
+			this.Player2HitButton.Size = new System.Drawing.Size(94, 84);
 			this.Player2HitButton.TabIndex = 0;
 			this.Player2HitButton.Text = "Hit";
 			this.Player2HitButton.UseVisualStyleBackColor = true;
@@ -150,45 +154,49 @@
 			this.Player2StayButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Player2StayButton.Location = new System.Drawing.Point(0, 0);
 			this.Player2StayButton.Name = "Player2StayButton";
-			this.Player2StayButton.Size = new System.Drawing.Size(94, 64);
+			this.Player2StayButton.Size = new System.Drawing.Size(94, 94);
 			this.Player2StayButton.TabIndex = 0;
 			this.Player2StayButton.Text = "Stay";
 			this.Player2StayButton.UseVisualStyleBackColor = true;
 			// 
 			// Player1Panel
 			// 
+			this.Player1Panel.Controls.Add(this.Player1CardPanel);
 			this.Player1Panel.Controls.Add(this.Player1Label);
 			this.Player1Panel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Player1Panel.Location = new System.Drawing.Point(3, 3);
 			this.Player1Panel.Name = "Player1Panel";
-			this.Player1Panel.Size = new System.Drawing.Size(670, 126);
+			this.Player1Panel.Size = new System.Drawing.Size(501, 181);
 			this.Player1Panel.TabIndex = 2;
 			// 
 			// Player2Panel
 			// 
+			this.Player2Panel.Controls.Add(this.Player2CardPanel);
 			this.Player2Panel.Controls.Add(this.Player2Label);
 			this.Player2Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Player2Panel.Location = new System.Drawing.Point(3, 135);
+			this.Player2Panel.Location = new System.Drawing.Point(3, 190);
 			this.Player2Panel.Name = "Player2Panel";
-			this.Player2Panel.Size = new System.Drawing.Size(670, 127);
+			this.Player2Panel.Size = new System.Drawing.Size(501, 182);
 			this.Player2Panel.TabIndex = 3;
 			// 
 			// Player1ScorePanel
 			// 
+			this.Player1ScorePanel.Controls.Add(this.Player1ScoreText);
 			this.Player1ScorePanel.Controls.Add(this.Player1ScoreLabel);
 			this.Player1ScorePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Player1ScorePanel.Location = new System.Drawing.Point(679, 3);
+			this.Player1ScorePanel.Location = new System.Drawing.Point(510, 3);
 			this.Player1ScorePanel.Name = "Player1ScorePanel";
-			this.Player1ScorePanel.Size = new System.Drawing.Size(94, 126);
+			this.Player1ScorePanel.Size = new System.Drawing.Size(94, 181);
 			this.Player1ScorePanel.TabIndex = 4;
 			// 
 			// Player2ScorePanel
 			// 
+			this.Player2ScorePanel.Controls.Add(this.Player2ScoreText);
 			this.Player2ScorePanel.Controls.Add(this.Player2ScoreLabel);
 			this.Player2ScorePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Player2ScorePanel.Location = new System.Drawing.Point(679, 135);
+			this.Player2ScorePanel.Location = new System.Drawing.Point(510, 190);
 			this.Player2ScorePanel.Name = "Player2ScorePanel";
-			this.Player2ScorePanel.Size = new System.Drawing.Size(94, 127);
+			this.Player2ScorePanel.Size = new System.Drawing.Size(94, 182);
 			this.Player2ScorePanel.TabIndex = 5;
 			// 
 			// Player1ScoreLabel
@@ -231,14 +239,56 @@
 			this.Player2Label.TabIndex = 1;
 			this.Player2Label.Text = "Player2";
 			// 
+			// Player1CardPanel
+			// 
+			this.Player1CardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.Player1CardPanel.Location = new System.Drawing.Point(0, 35);
+			this.Player1CardPanel.Name = "Player1CardPanel";
+			this.Player1CardPanel.Size = new System.Drawing.Size(501, 149);
+			this.Player1CardPanel.TabIndex = 2;
+			// 
+			// Player2CardPanel
+			// 
+			this.Player2CardPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.Player2CardPanel.Location = new System.Drawing.Point(3, 29);
+			this.Player2CardPanel.Name = "Player2CardPanel";
+			this.Player2CardPanel.Size = new System.Drawing.Size(498, 150);
+			this.Player2CardPanel.TabIndex = 3;
+			// 
+			// Player1ScoreText
+			// 
+			this.Player1ScoreText.AutoSize = true;
+			this.Player1ScoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Player1ScoreText.Location = new System.Drawing.Point(5, 35);
+			this.Player1ScoreText.Name = "Player1ScoreText";
+			this.Player1ScoreText.Size = new System.Drawing.Size(30, 31);
+			this.Player1ScoreText.TabIndex = 1;
+			this.Player1ScoreText.Text = "0";
+			// 
+			// Player2ScoreText
+			// 
+			this.Player2ScoreText.AutoSize = true;
+			this.Player2ScoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Player2ScoreText.Location = new System.Drawing.Point(5, 29);
+			this.Player2ScoreText.Name = "Player2ScoreText";
+			this.Player2ScoreText.Size = new System.Drawing.Size(30, 31);
+			this.Player2ScoreText.TabIndex = 2;
+			this.Player2ScoreText.Text = "0";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(876, 265);
+			this.ClientSize = new System.Drawing.Size(707, 375);
 			this.Controls.Add(this.MainTableLayout);
+			this.MinimumSize = new System.Drawing.Size(390, 187);
 			this.Name = "MainForm";
-			this.Text = "Form1";
+			this.Text = "Black Jack";
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.MainTableLayout.ResumeLayout(false);
 			this.Player1SplitContainer.Panel1.ResumeLayout(false);
 			this.Player1SplitContainer.Panel2.ResumeLayout(false);
@@ -277,6 +327,10 @@
 		private System.Windows.Forms.Label Player1ScoreLabel;
 		private System.Windows.Forms.Panel Player2ScorePanel;
 		private System.Windows.Forms.Label Player2ScoreLabel;
+		private System.Windows.Forms.FlowLayoutPanel Player1CardPanel;
+		private System.Windows.Forms.FlowLayoutPanel Player2CardPanel;
+		private System.Windows.Forms.Label Player1ScoreText;
+		private System.Windows.Forms.Label Player2ScoreText;
 	}
 }
 
